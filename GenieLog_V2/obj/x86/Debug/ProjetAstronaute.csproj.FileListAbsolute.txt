@@ -1,0 +1,7 @@
+H:\2A\GenieLog_V2\GenieLog_V2\bin\Debug\GenieLog_V2.exe
+H:\2A\GenieLog_V2\GenieLog_V2\bin\Debug\GenieLog_V2.pdb
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\ProjetAstronaute.Home.resources
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\GenieLog_V2.Properties.Resources.resources
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\ProjetAstronaute.csproj.GenerateResource.Cache
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\GenieLog_V2.exe
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\GenieLog_V2.pdb

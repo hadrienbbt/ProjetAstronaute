@@ -1,0 +1,3 @@
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\ProjetAstronaute.Home.resources
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\GenieLog_V2.Properties.Resources.resources
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\GenieLog_V2.csproj.GenerateResource.Cache
