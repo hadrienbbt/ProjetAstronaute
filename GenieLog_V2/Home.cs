@@ -129,7 +129,8 @@ namespace ProjetAstronaute
             switch (this.test)
             {
                 case 1:
-                    Console.Write("test perception et mémoire associative");
+                    Perception page2 = new Perception(niveau);
+                    Console.WriteLine(page2.ToString());
                     break;
                 case 2:
                     Console.Write("test attention er concentration");
@@ -142,15 +143,6 @@ namespace ProjetAstronaute
                     break;
                 case 5:
                     Console.Write("test problèmes physiques");
-                    break;
-            }
-            switch (this.niveau)
-            {
-                case 1:
-                    Console.WriteLine(" niveau facile");
-                    break;
-                case 2:
-                    Console.WriteLine(" niveau difficile");
                     break;
             }
         }

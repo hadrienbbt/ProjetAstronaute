@@ -102,6 +102,7 @@
             this.typeTest2.TabIndex = 4;
             this.typeTest2.Text = "Attention et concentration";
             this.typeTest2.UseVisualStyleBackColor = false;
+            this.typeTest2.Click += new System.EventHandler(this.typeTest2_Click);
             // 
             // typeTest3
             // 
