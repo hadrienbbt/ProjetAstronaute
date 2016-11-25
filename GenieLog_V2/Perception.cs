@@ -7,6 +7,7 @@ namespace ProjetAstronaute
 {
     class Perception : Tests
     {
+
         string alphabet = "abcdefghijkl";
 
         // On va générer une règle lorsqu'on crée la classe Percpetion
@@ -41,26 +42,46 @@ namespace ProjetAstronaute
             if (randomNumber == 1) formeRef = "carre";
             else formeRef = "rond";
             randomNumber = random.Next(0, 2);
-            if (randomNumber == 1) couleurRef = "bleu";
-            else couleurRef = "jaune";
-            return "Mémorisez les valeurs de tous les " + formeRef + "s " + couleurRef + "s";
+            if (randomNumber == 1)
+            {
+                couleurRef = "Blue";
+                return "Mémorisez les valeurs de tous les " + formeRef + "s bleus";
+            }
+            else
+            {
+                couleurRef = "Yellow";
+                return "Mémorisez les valeurs de tous les " + formeRef + "s jaunes";
+            }
+
+            
         }
 
         public List<Forme> genererFormes()
         {
             ConsoleColor couleur;
+            string forme;
             Random random = new Random();
             List<Forme> formes = new List<Forme>();
+            int compteurForme = 0;
 
-            foreach (char c in alphabet)
+            while (compteurForme != 3 && compteurForme != 4)
             {
-                if (random.Next(0, 2) == 1) couleur = System.ConsoleColor.Blue;
-                else couleur = System.ConsoleColor.Yellow;
-                formes.Add(new Forme(c, random.Next(0, 11), couleur));
-            }
-            // Vérifier que la contrainte est vérifiée
-            
+                formes.Clear();
+                compteurForme = 0;
 
+                foreach (char c in alphabet)
+                {
+                    if (random.Next(0, 2) == 1) couleur = System.ConsoleColor.Blue;
+                    else couleur = System.ConsoleColor.Yellow;
+                    if (random.Next(0, 2) == 1) forme = "carre";
+                    else forme = "rond";
+                    formes.Add(new Forme(c, random.Next(0, 11), couleur, forme));
+                }
+
+                // Vérifier que la contrainte est vérifiée
+
+                foreach (Forme f in formes) if (f.getType() == formeRef && f.getCouleur().ToString() == couleurRef) compteurForme++;
+            }
             return formes;
         }
 
@@ -78,16 +99,21 @@ namespace ProjetAstronaute
         protected char lettre;
         protected int chiffre;
         protected ConsoleColor couleur;
+        protected string type;
 
-        public Forme (char uneLettre, int unChiffre, ConsoleColor uneCouleur) {
+        public Forme (char uneLettre, int unChiffre, ConsoleColor uneCouleur, string unType) {
             lettre = uneLettre;
             chiffre = unChiffre;
             couleur = uneCouleur;
+            type = unType;
         }
 
         public override string ToString()
         {
-            return "Je suis la forme " + lettre + " de couleur " + couleur + " et je porte le chiffre " + chiffre;
+            return "Je suis la forme "+ type + " " + lettre + " de couleur " + couleur + " et je porte le chiffre " + chiffre;
         }
+
+        public string getType() {return this.type;}
+        public System.ConsoleColor getCouleur() { return this.couleur; }
     }
 }

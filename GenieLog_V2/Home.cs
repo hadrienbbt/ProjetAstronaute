@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using GenieLog_V2;
 
 namespace ProjetAstronaute
 {
@@ -129,8 +130,9 @@ namespace ProjetAstronaute
             switch (this.test)
             {
                 case 1:
-                    Perception page2 = new Perception(niveau);
-                    Console.WriteLine(page2.ToString());
+                    Form_Perception test = new Form_Perception(niveau);
+                    test.Show();
+                    this.Hide();
                     break;
                 case 2:
                     Console.Write("test attention er concentration");

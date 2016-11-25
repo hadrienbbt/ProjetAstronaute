@@ -41,6 +41,7 @@ namespace ProjetAstronaute
             this.timer = timer;
         }
 
+        public int getNiveau() { return this.niveau; }
 
 	    public virtual void lancerTest()
 	    {

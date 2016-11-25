@@ -14,3 +14,4 @@ Y:\ENSC_2A\GenieLog\ProjetAstronaute\GenieLog_V2\obj\x86\Debug\ProjetAstronaute.
 Y:\ENSC_2A\GenieLog\ProjetAstronaute\GenieLog_V2\obj\x86\Debug\ProjetAstronaute.Home.resources
 Y:\ENSC_2A\GenieLog\ProjetAstronaute\GenieLog_V2\obj\x86\Debug\GenieLog_V2.Properties.Resources.resources
 Y:\ENSC_2A\GenieLog\ProjetAstronaute\GenieLog_V2\obj\x86\Debug\ProjetAstronaute.csproj.GenerateResource.Cache
+H:\2A\GenieLog_V2\GenieLog_V2\obj\x86\Debug\GenieLog_V2.Form_Perception.resources
