@@ -117,20 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="explications.Text" xml:space="preserve">
-    <value>Vous allez pouvoir effectuer tout un tas de 
-tests pour vérifier que vous n'êtes pas 
-arriéré. Pas mal hein ?
-
-Super.
-
-Pour continuer veuillez choisir un type de 
-test et un niveau de difficulté.
-Sélectionnez 1 si vous n'êtes pas sûr d'être 
-une lumière, ou 2 si vous vous croyez 
-fabuleux (vous verrez que non).
-
-Cliquez ensuite sur OK ! pour démarrer 
-l'épreuve.</value>
-  </data>
 </root>

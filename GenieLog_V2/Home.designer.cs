@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.Titre = new System.Windows.Forms.Label();
             this.Paragraphe = new System.Windows.Forms.Label();
             this.explications = new System.Windows.Forms.Label();
@@ -71,9 +70,10 @@
             this.explications.Font = new System.Drawing.Font("Arial", 9F);
             this.explications.Location = new System.Drawing.Point(77, 118);
             this.explications.Name = "explications";
-            this.explications.Size = new System.Drawing.Size(246, 210);
+            this.explications.Size = new System.Drawing.Size(247, 75);
             this.explications.TabIndex = 2;
-            this.explications.Text = resources.GetString("explications.Text");
+            this.explications.Text = "Pour commencer veuillez choisir un type de \r\ntest et un niveau de difficulté.\r\n\r\n" +
+    "Cliquez ensuite sur OK ! pour démarrer \r\nl\'épreuve.";
             this.explications.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // typeTest1
@@ -82,7 +82,7 @@
             this.typeTest1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.typeTest1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.typeTest1.Font = new System.Drawing.Font("Arial", 10F);
-            this.typeTest1.Location = new System.Drawing.Point(0, 3);
+            this.typeTest1.Location = new System.Drawing.Point(0, 0);
             this.typeTest1.Name = "typeTest1";
             this.typeTest1.Size = new System.Drawing.Size(146, 58);
             this.typeTest1.TabIndex = 3;
@@ -96,7 +96,7 @@
             this.typeTest2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.typeTest2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.typeTest2.Font = new System.Drawing.Font("Arial", 10F);
-            this.typeTest2.Location = new System.Drawing.Point(0, 88);
+            this.typeTest2.Location = new System.Drawing.Point(179, 0);
             this.typeTest2.Name = "typeTest2";
             this.typeTest2.Size = new System.Drawing.Size(146, 58);
             this.typeTest2.TabIndex = 4;
@@ -110,7 +110,7 @@
             this.typeTest3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.typeTest3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.typeTest3.Font = new System.Drawing.Font("Arial", 10F);
-            this.typeTest3.Location = new System.Drawing.Point(0, 178);
+            this.typeTest3.Location = new System.Drawing.Point(88, 178);
             this.typeTest3.Name = "typeTest3";
             this.typeTest3.Size = new System.Drawing.Size(146, 58);
             this.typeTest3.TabIndex = 5;
@@ -124,7 +124,7 @@
             this.typeTest4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.typeTest4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.typeTest4.Font = new System.Drawing.Font("Arial", 10F);
-            this.typeTest4.Location = new System.Drawing.Point(0, 269);
+            this.typeTest4.Location = new System.Drawing.Point(0, 92);
             this.typeTest4.Name = "typeTest4";
             this.typeTest4.Size = new System.Drawing.Size(146, 58);
             this.typeTest4.TabIndex = 6;
@@ -138,7 +138,7 @@
             this.typeTest5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.typeTest5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.typeTest5.Font = new System.Drawing.Font("Arial", 10F);
-            this.typeTest5.Location = new System.Drawing.Point(0, 367);
+            this.typeTest5.Location = new System.Drawing.Point(179, 92);
             this.typeTest5.Name = "typeTest5";
             this.typeTest5.Size = new System.Drawing.Size(146, 58);
             this.typeTest5.TabIndex = 7;
@@ -155,7 +155,7 @@
             this.userInteraction.Controls.Add(this.typeTest2);
             this.userInteraction.Controls.Add(this.typeTest4);
             this.userInteraction.Controls.Add(this.typeTest3);
-            this.userInteraction.Location = new System.Drawing.Point(41, 348);
+            this.userInteraction.Location = new System.Drawing.Point(41, 212);
             this.userInteraction.Name = "userInteraction";
             this.userInteraction.Size = new System.Drawing.Size(325, 428);
             this.userInteraction.TabIndex = 8;
@@ -167,7 +167,7 @@
             this.valider.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.valider.Font = new System.Drawing.Font("Arial", 10F);
-            this.valider.Location = new System.Drawing.Point(219, 194);
+            this.valider.Location = new System.Drawing.Point(129, 316);
             this.valider.Name = "valider";
             this.valider.Size = new System.Drawing.Size(63, 42);
             this.valider.TabIndex = 10;
@@ -180,9 +180,9 @@
             // 
             this.choixNiveau.Controls.Add(this.choixNiveau1);
             this.choixNiveau.Controls.Add(this.choixNiveau2);
-            this.choixNiveau.Location = new System.Drawing.Point(207, 0);
+            this.choixNiveau.Location = new System.Drawing.Point(39, 255);
             this.choixNiveau.Name = "choixNiveau";
-            this.choixNiveau.Size = new System.Drawing.Size(94, 126);
+            this.choixNiveau.Size = new System.Drawing.Size(243, 42);
             this.choixNiveau.TabIndex = 10;
             this.choixNiveau.Visible = false;
             // 
@@ -190,7 +190,7 @@
             // 
             this.choixNiveau1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
             this.choixNiveau1.Font = new System.Drawing.Font("Arial", 10F);
-            this.choixNiveau1.Location = new System.Drawing.Point(0, 16);
+            this.choixNiveau1.Location = new System.Drawing.Point(0, 0);
             this.choixNiveau1.Name = "choixNiveau1";
             this.choixNiveau1.Size = new System.Drawing.Size(94, 42);
             this.choixNiveau1.TabIndex = 8;
@@ -204,7 +204,7 @@
             // 
             this.choixNiveau2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
             this.choixNiveau2.Font = new System.Drawing.Font("Arial", 10F);
-            this.choixNiveau2.Location = new System.Drawing.Point(0, 84);
+            this.choixNiveau2.Location = new System.Drawing.Point(150, 0);
             this.choixNiveau2.Name = "choixNiveau2";
             this.choixNiveau2.Size = new System.Drawing.Size(94, 42);
             this.choixNiveau2.TabIndex = 9;
@@ -218,7 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 832);
+            this.ClientSize = new System.Drawing.Size(414, 586);
             this.Controls.Add(this.userInteraction);
             this.Controls.Add(this.explications);
             this.Controls.Add(this.Paragraphe);

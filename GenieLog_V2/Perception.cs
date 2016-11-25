@@ -58,6 +58,9 @@ namespace ProjetAstronaute
                 else couleur = System.ConsoleColor.Yellow;
                 formes.Add(new Forme(c, random.Next(0, 11), couleur));
             }
+            // Vérifier que la contrainte est vérifiée
+            
+
             return formes;
         }
 
