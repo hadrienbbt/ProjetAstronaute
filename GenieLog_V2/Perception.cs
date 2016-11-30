@@ -58,7 +58,7 @@ namespace ProjetAstronaute
 
         public List<Forme> genererFormes()
         {
-            ConsoleColor couleur;
+            string couleur;
             string forme;
             Random random = new Random();
             List<Forme> formes = new List<Forme>();
@@ -71,11 +71,11 @@ namespace ProjetAstronaute
 
                 foreach (char c in alphabet)
                 {
-                    if (random.Next(0, 2) == 1) couleur = System.ConsoleColor.Blue;
-                    else couleur = System.ConsoleColor.Yellow;
+                    if (random.Next(0, 2) == 1) couleur = "Blue";
+                    else couleur = "Yellow";
                     if (random.Next(0, 2) == 1) forme = "carre";
                     else forme = "rond";
-                    formes.Add(new Forme(c, random.Next(0, 11), couleur, forme));
+                    formes.Add(new Forme(c, random.Next(0, 10), couleur, forme));
                 }
 
                 // Vérifier que la contrainte est vérifiée
@@ -92,16 +92,22 @@ namespace ProjetAstronaute
                 s += "\n" + f.ToString();
             return s;
         }
+
+        public string getCouleurRef()   { return this.couleurRef;}
+        public string getFormeRef()     { return this.formeRef; }
+        public List<Forme> getFormes()  { return this.lesFormes; }
+        public string getRegle()        { return this.regle; }
+
     }
 
     internal class Forme   
     {  
         protected char lettre;
         protected int chiffre;
-        protected ConsoleColor couleur;
+        protected string couleur;
         protected string type;
 
-        public Forme (char uneLettre, int unChiffre, ConsoleColor uneCouleur, string unType) {
+        public Forme (char uneLettre, int unChiffre, string uneCouleur, string unType) {
             lettre = uneLettre;
             chiffre = unChiffre;
             couleur = uneCouleur;
@@ -114,6 +120,8 @@ namespace ProjetAstronaute
         }
 
         public string getType() {return this.type;}
-        public System.ConsoleColor getCouleur() { return this.couleur; }
+        public string getCouleur() { return this.couleur; }
+        public char getLettre() { return this.lettre; }
+        public int getChiffre() { return this.chiffre; }
     }
 }
